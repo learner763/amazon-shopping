@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    background-color: purple;
+}
+
+#medium_icon{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    font-style: italic;
+}
+.a{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+#msg_start{
+    margin-top: 60px;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;    
+    margin-bottom: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+.acc{
+    margin-top: 20px;
+    background-color: yellow;
+    height: auto;
+    width: auto;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-style: italic;
+}
+#or{
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bolder;
+    color: white;
+    font-size: 40px;    
+}
+.create{
+    border: white solid;
+    border-width: 5px;
+    border-radius: 10px;
+    color: black;
+    display: none;
+    margin: 9px;
+    font-style: italic;
+}
+.Enter{
+    border-radius: 7px;
+    margin-top: 20px;
+    background-color: yellow;
+    height: auto;
+    width: auto;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    font-style: italic;
+}
+#Back{
+    font-style: italic;
+    border-radius: 7px;
+    margin-top: 20px;
+    background-color: yellow;
+    height: auto;
+    width: auto;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#pass_length{
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    display: none;
+    margin-top: 5px;
+}
+#pass_length_{
+    font-style: italic;
+    font-size: 18px;
+    color: white;
+    display: none;
+    margin-top: 5px;
+}

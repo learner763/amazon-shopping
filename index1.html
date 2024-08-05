@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health/Fitness Trackers and Watches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            background-color: palegreen;
+        }
+        .a{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: black;
+            justify-content: space-around;
+            background-size: contain;
+            flex-wrap: wrap;
+        }
+        .a1{
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-size: contain;
+        }
+        .a1 i{
+            margin: 20px;
+            font-size: 30px;
+            margin-right: 9px;
+            margin-left: 9px;
+            color: white;
+            align-items: center;
+        }
+        .a1 i:hover{
+            cursor: pointer;
+        }
+        
+        .a1 img:hover{
+            cursor: pointer;
+        }
+        #ama{
+            margin: 20px;
+            height: 70px;
+            width: 140px;
+        } 
+        .a1 label{
+            color: white;
+            cursor: pointer;
+            align-self: center;
+            margin: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @media (max-width :800px) {
+            #SignIn{
+                margin: 0;
+            }
+            .a1 i{
+                margin: 0;
+            }
+            #Search_Amazon{
+                margin: 0;
+            }
+        }
+        .c{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-size: contain;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            border-radius: 13px;
+            gap: 3%;
+        }
+        .c1
+        {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 13px;
+            display: flex;
+            flex-direction: column;
+            background-size: contain;
+            max-width: 550px;
+            max-height:fit-content;
+            background-color: blueviolet;
+        }
+        .c1 label{
+            margin-top: 5px;
+            font-size: 25px;
+            color:white;
+            font-style: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        .c1 img{
+            border-radius: 13px;
+            width: 300px;
+            height: 300px;
+            align-self: center;
+        }
+        .buy:hover{
+            cursor: pointer;
+        }
+        .c1:hover{
+            cursor: pointer;
+        }
+        .c1 label:hover{
+            cursor: pointer;
+        }
+        .buy{
+            font-size: 20px;
+            background-color: yellow;
+            border-radius: 10px;
+            border: none;
+        }
+        .b{
+            background-color: aqua;
+            font-size: 40px;
+            font-weight: bolder;
+            width: 100%;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <script src="script1.js"></script>
+    <div class="a">
+        <div class="a1">
+            <img id="ama" src="amazon.png">
+            <i class="fas fa-cart-shopping">
+                <label id="Cart">Cart</label>
+            </i>
+            <i class="fas fa-dollar p" style="display: none;">
+                <label id="pay">Payment</label>
+            </i>
+            
+
+        </div>
+    </div>
+
+    <div class="b">
+        <label id="label">Health/Fitness Trackers and Watches</label>
+    </div>
+   
+        <div class="c">
+            <div class="c1">
+                <img class="im" src="fitness.png">
+                <label class="l">Health Fitness Tracker 2024 with 24/7 Heart Rate
+                    , Blood Oxygen, Blood Pressure, Sleep Tracker, IP68
+                     Waterproof Activity Trackers with Step Tracker
+                    <p class="d">$48</p>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i id="i1" class="fas fa-star" style="color: white ;"></i> 
+                <r class="r">(3.8)</r>
+                </label>
+            </div>
+            <div class="c1">
+                <img class="im" src="fitness1.png">
+                <label class="l">Smart Watch for Women (Answer /Make Calls), Alexa Built-in, Fitness Tracker, 
+                    Heart Rate/Sleep Tracker/ Waterproof, Smartwatch Compatible Android iPhone
+                    <p class="d">$53</p>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i id="i2" class="fas fa-star" style="color: white;"></i> 
+                <r class="r">(4.2)</r>
+                </label>
+            </div>
+        </div>
+
+        <div class="c">
+            <div class="c1">
+                <img class="im" src="fitness2.png">
+                <label class="l">Amazfit Active Smart Watch 42mm,with AI Fitness ,Sleep Coach, GPS, Alexa-Enabled,Bluetooth Calling and Music, 14 Day Battery, 
+                    Fitness Tracker with more than 120 Sports Modes, for Android and iPhone
+                    <p class="d">$100</p>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i id="i3" class="fas fa-star" style="color: white;"></i> 
+                <r class="r">(4.2)</r>
+                </label>
+            </div>
+            <div class="c1">
+                <img class="im" src="fitness3.png">
+                <label class="l">Amazfit Bip 5 Unity Smart Watch 46mm, 11-Day Battery,
+                     Fitness Activity Tracker with 120+ Sports Modes, Heart Rate, Sleep Monitor,
+                     Customizable Watch Faces, for Android and iPhone
+                    <p class="d">$70</p>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i id="i4" class="fas fa-star" style="color: white;"></i> 
+                <r class="r">(4.2)</r>
+                </label>
+            </div>
+        </div>
+
+        <div class="c">
+            <div class="c1">
+                <img class="im" src="fitness4.png">
+                <label class="l">ENOMIR Smart watch for Women Men with Bluetooth Call,Smartwatch with Alexa Built-in,Heart Rate SpO2 Sleep Monitor,5ATM Waterproof,Step Calorie Activity Trackers and Smartwatches for iOS&Android Phones
+                    <p class="d">$46</p>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i id="i5" class="fas fa-star" style="color: white;"></i> 
+                <r class="r">(4.1)</r>
+                
+                </label>
+            </div>
+            <div class="c1">
+                <img class="im" src="fitness5.png">
+                <label class="l">
+                    <p class="d">$60</p>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i class="fas fa-star" style="color: yellow;"></i>
+                <i id="i6" class="fas fa-star" style="color: white;"></i> 
+                <r class="r">(4.1)</r>
+                </label>
+            </div>
+        </div>
+
+        <div style=" background-color: darkslategray; color: white; font-size: 30px; display: flex; flex-wrap: wrap;">
+            <label style="margin-top: 20px; margin-bottom: 20px;">Welcome to Amazon, 
+                your ultimate online shopping destination! 
+                We are dedicated to providing a seamless shopping 
+                experience with a wide variety of products across 
+                multiple categories. Our commitment is to offer the 
+                best prices, fast shipping, and excellent customer 
+                service. Explore our extensive range of electronics, 
+                fashion, home goods, and more, all in one convenient 
+                place. Whether you're looking for the latest gadgets, 
+                stylish apparel, or everyday essentials, we've got you 
+                covered. Thank you for choosing Amazon – Happy shopping!</label>
+        </div>
+</body>
+</html>

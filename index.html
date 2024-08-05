@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        .a{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: black;
+            justify-content: space-around;
+            background-size: contain;
+            flex-wrap: wrap;
+        }
+        .a1{
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-size: contain;
+        }
+        .a1 i{
+            margin: 20px;
+            font-size: 30px;
+            margin-right: 9px;
+            margin-left: 9px;
+            color: white;
+            align-items: center;
+        }
+        .a1 i:hover{
+            cursor: pointer;
+        }
+        #Search_Amazon
+        {
+            margin: 20px;
+            border-radius: 10px;
+            border: none;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .a1 img:hover{
+            cursor: pointer;
+        }
+        #ama{
+            margin: 20px;
+            height: 70px;
+            width: 140px;
+        } 
+        .a1 label{
+            color: white;
+            cursor: pointer;
+            align-self: center;
+            margin: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @media (max-width :800px) {
+            #SignIn{
+                margin: 0;
+            }
+            .a1 i{
+                margin: 0;
+            }
+            #Search_Amazon{
+                margin: 0;
+            }
+        }
+        .b{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: aqua;
+            flex-wrap: wrap;
+        }
+        .b label{
+            margin-top: 30px;
+            font-size: 40px;
+            font-weight: bolder;
+            justify-self: center; 
+            align-self: center;    
+            margin-bottom: 30px;
+   
+        }
+        .b img{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            height: 400px;
+        }
+        .c{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: yellow;
+        }
+        .c1
+        {
+            margin: 3%;
+            width: 400px;
+            height: 400px;
+            margin-top: 40px;
+            border-radius: 13px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            background-size: contain;
+            background-position: center;
+            transition: .6s ease transform;
+        }
+        .c1:hover
+        {
+            transform: scale(1.1);
+        }
+        .c1 label{
+            font-size: 25px;
+            font-weight: bolder;
+            align-content: center;
+            color:white;
+            font-style: italic;
+        }
+        .c1 img{
+            border-radius: 13px;
+            width: 300px;
+            height: 300px;
+        }
+        .c1:hover{
+            cursor: pointer;
+        }
+        .c1 label:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="a">
+        <div class="a1">
+            <img id="ama" src="amazon.png">
+            <input id="Search_Amazon" type="text" placeholder="Search Amazon">
+            
+            <i class="fas fa-location">
+                <label id="Location">Location</label>
+            </i>
+            <i class="fas fa-sign-in ">
+                <label id="SignIn">Enter Account</label>
+            </i>
+
+        </div>
+    </div>
+
+    <div class="b">
+        <label >Everything You Need,Delivered with a Click!</label>
+        <img src="shopping.png">
+    </div>
+
+
+        <div class="c">
+            <div class="c1">
+                <label>Health/Fitness Trackers and Watches</label>
+                <img src="fitness.png">
+            </div>
+            <div class="c1">
+                <label>Home and Kitchen</label>
+                <img src="kitchen.png">
+            </div>
+            <div class="c1">
+                <label>Body and Beauty</label>
+                <img src="beauty.png">
+            </div>
+        </div>
+
+        <div class="c">   
+            <div class="c1">
+                <label>Dresses and Fashion Trends</label>
+                <img src="dress.png">
+            </div>
+            <div class="c1">
+                <label>Paint Brushes</label>
+                <img src="paint4.png">
+            </div>
+            <div class="c1">
+                <label>Lighting and Ceiling Fans</label>
+                <img src="ceiling6.png">
+            </div>
+        </div>
+
+        <div class="c">   
+            <div class="c1">
+                <label>Digital Alarm Clocks</label>
+                <img src="digital_alarm.png">
+            </div>
+            <div class="c1">
+                <label>Virtual Reality Headsets</label>
+                <img src="vr1.png">
+            </div>
+            <div class="c1">
+                <label>Cell Phones and Accessories</label>
+                <img src="phone.png">
+            </div>
+        </div>
+
+        <div class="c">   
+            <div class="c1">
+                <label>Laptops and Tablets</label>
+                <img src="pc3.png">
+            </div>
+            <div class="c1">
+                <label>Health Care</label>
+                <img src="health6.png">
+            </div>    
+            <div class="c1">
+                <label>PS5 Accessories</label>
+                <img src="ps1.png">
+            </div> 
+        </div>
+        <div style=" background-color: darkslategray; color: white; font-size: 30px; display: flex; flex-wrap: wrap;">
+            <label style="margin-top: 20px; margin-bottom: 20px;">Welcome to Amazon, 
+                your ultimate online shopping destination! 
+                We are dedicated to providing a seamless shopping 
+                experience with a wide variety of products across 
+                multiple categories. Our commitment is to offer the 
+                best prices, fast shipping, and excellent customer 
+                service. Explore our extensive range of electronics, 
+                fashion, home goods, and more, all in one convenient 
+                place. Whether you're looking for the latest gadgets, 
+                stylish apparel, or everyday essentials, we've got you 
+                covered. Thank you for choosing Amazon – Happy shopping!</label>
+        </div>
+
+</body>
+</html>

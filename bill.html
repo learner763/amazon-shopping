@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .a{
+            font-size: 50px;
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 130px;
+            gap: 10px;
+        }
+        #ama{
+            margin: 20px;
+            height: 70px;
+            width: 140px;
+        } 
+        #button{
+            cursor: pointer;
+        }
+        .v{
+            border-radius: 15px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <img id="ama" src="amazon.png">
+
+        <input class="v" placeholder="Full Name" type="text">
+        <input class="v" placeholder="Phone Number" type="number">
+        <input class="v" placeholder="City" type="text">
+        <input class="v" placeholder="Street Address" type="text">
+        <input class="v" placeholder="Bank Account Number" type="text">
+        <button id="button" style="background-color: black; color: white; border: none;">Pay Amount</button>
+    </div>
+    <div style=" background-color: darkslategray; color: white; font-size: 30px; display: flex; flex-wrap: wrap;">
+        <label style="margin-top: 20px; margin-bottom: 20px;">Welcome to Amazon, 
+            your ultimate online shopping destination! 
+            We are dedicated to providing a seamless shopping 
+            experience with a wide variety of products across 
+            multiple categories. Our commitment is to offer the 
+            best prices, fast shipping, and excellent customer 
+            service. Explore our extensive range of electronics, 
+            fashion, home goods, and more, all in one convenient 
+            place. Whether you're looking for the latest gadgets, 
+            stylish apparel, or everyday essentials, we've got you 
+            covered. Thank you for choosing Amazon – Happy shopping!</label>
+    </div>
+    <script>
+        document.addEventListener("click",function()
+        {
+            let w=1
+            let aa=document.getElementById("button")
+            aa.addEventListener("click",function()
+            {
+                let v=document.getElementsByClassName("v")
+                for(let i=0;i<v.length;i++)
+            {
+                if(v[i]=="")
+                {
+                    w=0
+                }
+            }
+            if(w==1){window.location.href="index.html"}
+            })
+            
+
+            
+        }
+        )
+    </script>
+</body>
+</html>
