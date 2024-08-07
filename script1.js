@@ -28,24 +28,120 @@ document.addEventListener("DOMContentLoaded",function()
     document.title=categories[thing]
     labler.textContent=categories[thing]
 
+    // Define global variables for ratings
+    let rating1_ = "3.8"; // from home_kitchen
+    let rating2_ = "4.2"; // from home_kitchen
+    let rating3_ = "4.2"; // from home_kitchen
+    let rating4_ = "4.2"; // from home_kitchen
+    let rating5_ = "4.1"; // from home_kitchen
+    let rating6_ = "4.1"; // from home_kitchen
+let rating1 = "4.8"; // from home_kitchen
+let rating2 = "4.9"; // from home_kitchen
+let rating3 = "4.7"; // from home_kitchen
+let rating4 = "4.7"; // from home_kitchen
+let rating5 = "3.8"; // from home_kitchen
+let rating6 = "4.3"; // from home_kitchen
+
+let rating7 = "4.8"; // from body_beauty
+let rating8 = "4.6"; // from body_beauty
+let rating9 = "4.8"; // from body_beauty
+let rating10 = "4.7"; // from body_beauty
+let rating11 = "4.7"; // from body_beauty
+let rating12 = "4.6"; // from body_beauty
+
+let rating13 = "4.4"; // from dresses
+let rating14 = "4.4"; // from dresses
+let rating15 = "4.7"; // from dresses
+let rating16 = "4.4"; // from dresses
+let rating17 = "4.5"; // from dresses
+let rating18 = "4.6"; // from dresses
+
+let rating19 = "4.6"; // from paint
+let rating20 = "4.1"; // from paint
+let rating21 = "4.6"; // from paint
+let rating22 = "4.4"; // from paint
+let rating23 = "4.2"; // from paint
+let rating24 = "4.6"; // from paint
+
+let rating25 = "4.0"; // from ceiling
+let rating26 = "4.2"; // from ceiling
+let rating27 = "4.6"; // from ceiling
+let rating28 = "4.8"; // from ceiling
+let rating29 = "5.0"; // from ceiling
+let rating30 = "4.6"; // from ceiling
+
+let rating31 = "4.4"; // from digital
+let rating32 = "4.6"; // from digital
+let rating33 = "4.3"; // from digital
+let rating34 = "4.5"; // from digital
+let rating35 = "4.5"; // from digital
+let rating36 = "4.3"; // from digital
+
+let rating37 = "3.5"; // from vr
+let rating38 = "5.0"; // from vr
+let rating39 = "4.8"; // from vr
+let rating40 = "4.3"; // from vr
+let rating41 = "3.6"; // from vr
+let rating42 = "4.7"; // from vr
+
+let rating43 = "4.7"; // from phone
+let rating44 = "4.6"; // from phone
+let rating45 = "4.5"; // from phone
+let rating46 = "4.5"; // from phone
+let rating47 = "4.5"; // from phone
+let rating48 = "4.6"; // from phone
+
+let rating49 = "4.2"; // from pc
+let rating50 = "4.1"; // from pc
+let rating51 = "4.2"; // from pc
+let rating52 = "5.0"; // from pc
+let rating53 = "4.4"; // from pc
+let rating54 = "4.6"; // from pc
+
+let rating55 = "4.3"; // from health
+let rating56 = "4.0"; // from health
+let rating57 = "4.0"; // from health
+let rating58 = "4.5"; // from health
+let rating59 = "4.6"; // from health
+let rating60 = "3.8"; // from health
+
+let rating61 = "4.4"; // from ps
+let rating62 = "4.4"; // from ps
+let rating63 = "4.4"; // from ps
+let rating64 = "4.8"; // from ps
+let rating65 = "4.0"; // from ps
+let rating66 = "4.4"; // from ps
+let ratingsArray = [rating1_,rating2_,rating3_,rating4_,rating5_,rating6_,
+    rating1, rating2, rating3, rating4, rating5, rating6, // home_kitchen
+    rating7, rating8, rating9, rating10, rating11, rating12, // body_beauty
+    rating13, rating14, rating15, rating16, rating17, rating18, // dresses
+    rating19, rating20, rating21, rating22, rating23, rating24, // paint
+    rating25, rating26, rating27, rating28, rating29, rating30, // ceiling
+    rating31, rating32, rating33, rating34, rating35, rating36, // digital
+    rating37, rating38, rating39, rating40, rating41, rating42, // vr
+    rating43, rating44, rating45, rating46, rating47, rating48, // phone
+    rating49, rating50, rating51, rating52, rating53, rating54, // pc
+    rating55, rating56, rating57, rating58, rating59, rating60, // health
+    rating61, rating62, rating63, rating64, rating65, rating66  // ps
+];
 let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, Blood Pressure, Sleep Tracker, IP68 Waterproof Activity Trackers with Step Tracker",
-    "fitness.png","4.8","$48","white"
+    "fitness.png",rating1_,"$48","white"
 ],["Smart Watch for Women (Answer /Make Calls), Alexa Built-in, Fitness Tracker, Heart Rate/Sleep Tracker/ Waterproof, Smartwatch Compatible Android iPhone",
-    "fitness1.png","4.9","$53","white"
+    "fitness1.png",rating2_,"$53","white"
 ],["Amazfit Active Smart Watch 42mm,with AI Fitness ,Sleep Coach, GPS, Alexa-Enabled,Bluetooth Calling and Music, 14 Day Battery, Fitness Tracker with more than 120 Sports Modes, for Android and iPhone"
-    ,"fitness2.png","4.7","$100","white"
+    ,"fitness2.png",rating3_,"$100","white"
 ],["Amazfit Bip 5 Unity Smart Watch 46mm, 11-Day Battery,Fitness Activity Tracker with 120+ Sports Modes, Heart Rate, Sleep Monitor,Customizable Watch Faces, for Android and iPhone",
-    "fitness3.png","4.7","$70","white"
+    "fitness3.png",rating4_,"$70","white"
 
 ],["ENOMIR Smart watch for Women Men with Bluetooth Call,Smartwatch with Alexa Built-in,Heart Rate SpO2 Sleep Monitor,5ATM Waterproof,Step Calorie Activity Trackers and Smartwatches for iOS&Android Phones",
-    "fitness4.png","3.8","$46","white"
+    "fitness4.png",rating5_,"$46","white"
 
 ],["ENOMIR Smart Watch for Men Women(Answer/Make Call), Alexa Built-in,Fitness with Heart Rate SpO2 Sleep Monitor 100 Sports 5ATM Waterproof Activity Trackers and Smartwatches iOS&Android Phones",
-    "fitness5.png","4.3","$60","white"
+    "fitness5.png",rating6_,"$60","white"
 ]]
 
     let home_kitchen=[["KitchenAid Universal Nesting Plastic Mixing Bowls, Set Of 3, 2.5 quart, 3.5 quart, 4.5 quart, Non Slip Base with Easy Pour Spout to Reduce Mess, Dishwasher Safe, Aqua Sky, White, Gray",
-        "kitchen1.png","4.7","$25","yellow"
+        "kitchen1.png",rating10,"$25","yellow"
     ],["5 QT Stainless Steel Mixer Bowl Compatible With Kitchenaid Tilt-Head Stand Mixers 4.5&5-Quart,Dishwasher Safe,5 Quart Mixing Bowl with Handle(𝗦𝘁𝗮𝗶𝗻𝗹𝗲𝘀𝘀 𝗦𝘁𝗲𝗲𝗹 𝗣𝗼𝗹𝗶𝘀𝗵𝗲𝗱)"
         ,"kitchen2.png","4.9","$28","yellow"
     ],["Measuring Cups and Spoons Set, 7 Stainless Steel Nesting Measuring Cups & 7 Spoons, 5 Mini Measuring Spoons & 2 Detachable Rings, Kitchen Gadgets for Cooking & Baking, Set of 21",
@@ -274,7 +370,6 @@ let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, B
     {
         for(let i=0;i<images.length;i++)
             {
-               
                 c1[i].style.display="none"
                 lables[i].childNodes[0].textContent=""
                 images[i].src=""
@@ -297,9 +392,7 @@ let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, B
             for(let i=0;i<payment.length;i++)
             {
                 if(buys.length!=0)
-                {
-                payment[0].style.display="block"
-                }
+                {payment[0].style.display="block"}
             }
             
     })
