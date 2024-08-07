@@ -370,6 +370,9 @@ let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, B
     {
         for(let i=0;i<images.length;i++)
             {
+                if(products[i].childNodes[8].textContent.includes("---Product Added to Cart---")==true)
+        {products[i].childNodes[8].textContent-="---Product Added to Cart---"
+        }
                 c1[i].style.display="none"
                 lables[i].childNodes[0].textContent=""
                 images[i].src=""
