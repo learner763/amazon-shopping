@@ -391,8 +391,7 @@ let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, B
             labler.textContent="Your Shopping Cart"
             for(let i=0;i<payment.length;i++)
             {
-                if(buys.length!=0)
-                {payment[0].style.display="block"}
+                payment[0].style.display="block"
             }
             
     })
