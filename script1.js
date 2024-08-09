@@ -361,13 +361,21 @@ let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, B
     {
         c1[i].addEventListener("click",function()
     {
-    if(products[i].childNodes[8].textContent.includes("---Product Added to Cart---")==false)
-        {products[i].childNodes[8].textContent+="---Product Added to Cart---"
-        buys.push(items[thing][i][1])}
-        localStorage.getItem("buy",buys)
+    if(products[i].childNodes[13].textContent.includes("  (---Product Added to Cart---)")==false)
+        {products[i].childNodes[13].textContent+="  (---Product Added to Cart---)"
+        buys.push(items[thing][i][1])
+}
+
             })
+
+    let change=document.getElementById("change")
+    let change_=document.getElementById("change_")
+
     cart.addEventListener("click",function()
     {
+        change.style.display="none"
+        change_.style.display="block"
+
         for(let i=0;i<images.length;i++)
             {
                 c1[i].style.display="none"
@@ -401,6 +409,16 @@ let fitness=[["Health Fitness Tracker 2024 with 24/7 Heart Rate, Blood Oxygen, B
   pay.addEventListener("click",function()
   {
     window.location.href="bill.html"
+
+})
+change.addEventListener("click",function()
+  {
+    window.location.href="index.html"
+
+})
+change_.addEventListener("click",function()
+  {
+    location.reload()
 
 })
 })
