@@ -15,7 +15,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 130px;
+            margin-top: 100px;
             gap: 10px;
         }
         #ama{
@@ -29,6 +29,7 @@
         .v{
             border-radius: 15px;
             border: none;
+            width: 200px;
         }
     </style>
 </head>
@@ -40,17 +41,17 @@
         <input class="v" placeholder="Phone Number" type="number">
         <input class="v" placeholder="City" type="text">
         <input class="v" placeholder="Street Address" type="text">
-        <input class="v" placeholder="Amount ($)" type="number">
-        <input class="v" placeholder="Bank Account Number" type="text">
-        
+        <input class="v" placeholder="Amount($)" type="number">
+        <input class="v" placeholder="Bank Account Number" type="number">
         <button id="button" style="background-color: black; color: white; border: none;">Pay Amount</button>
     </div>
-   
+
     <script>
         document.addEventListener("click",function()
         {
             let w=1
             let aa=document.getElementById("button")
+            
             aa.addEventListener("click",function()
             {
                 let v=document.getElementsByClassName("v")
@@ -61,7 +62,9 @@
                     w=0
                 }
             }
-            if(w==1){window.location.href="index.html"}
+
+            if(w==1){
+                window.location.href="index.html"}
             })
             
 
