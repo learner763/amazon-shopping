@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded",function()
 {
     let pass_length=document.getElementById("pass_length")
+    let pass_length_=document.getElementById("pass_length_")
+
     let enter=document.getElementsByClassName("Enter")
     let create=document.getElementsByClassName("create")
     create[0].style.display="block"
     enter[0].style.display="block"
+    pass_length.style.display="block"
+
     const countries = [
         "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua-Barbuda",
         "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
@@ -33,16 +37,16 @@ document.addEventListener("DOMContentLoaded",function()
         "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand",
         "Timor-Leste", "Togo", "Tonga", "Trinidad-Tobago", "Tunisia", "Turkey", "Turkmenistan",
         "Tuvalu", "Uganda", "Ukraine", "United-Arab-Emirates", "United-Kingdom", "United-States-America",
-        "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
+        "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela","Uganda", "Vietnam", "Yemen", "Zambia", "Zimbabwe"
     ];
     
     
     enter[0].addEventListener("click",function()
         {
             const c=create[0].value
-            if(countries.includes(c)==false){pass_length.style.display="block"}
+            if(countries.includes(c)==false){pass_length_.style.display="block"}
             else{
-                pass_length.style.display="none"
+                pass_length_.style.display="none"
                 localStorage.setItem("c",c)
                 window.open("index.html","_self")
                 
