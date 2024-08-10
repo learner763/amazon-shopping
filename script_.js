@@ -7,35 +7,17 @@ document.addEventListener("DOMContentLoaded",function()
     let Back=document.getElementById("Back")
     let enter=document.getElementsByClassName("Enter")
     let create=document.getElementsByClassName("create")
-    for(let i=0;i<acc.length;i++)
-    {
-    acc[i].addEventListener("click",function()
+    acc[0].addEventListener("click",function()
     { 
-        for(let j=0;j<acc.length;j++)
+        acc[0].style.display="none"
+        for(let j=0;j<2;j++)
             {
-                acc[j].style.display="none"
                 create[j].style.display="block"
             }  
-        or.style.display="none"
-        enter[i].style.display="block"
-        Back.style.display="block"
-    })}
-    Back.addEventListener("click",function()
-    {
-        pass_length.style.display="none"
-        pass_length_.style.display="none"
-        for(let i=0;i<acc.length;i++)
-            {
-                acc[i].style.display="block"
-                create[i].style.display="none"
-                enter[i].style.display="none"
-            }  
-        or.style.display="block"
-        Back.style.display="none"
-    })  
-    for(let r=0;r<enter.length;r++)
-        {
-            enter[r].addEventListener("click",function()
+        enter[0].style.display="block"
+    })
+    
+    enter[0].addEventListener("click",function()
         {
             const username=create[0].value
             if(username[0]!=="@" || username.length<2){pass_length_.style.display="block"}
@@ -50,5 +32,5 @@ document.addEventListener("DOMContentLoaded",function()
                 }
             }
         })
-        }  
+         
 })
