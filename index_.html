@@ -3,102 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
-    <style>
-        body{
-            background-color: palegreen;
-            margin: 0%;
-        }
-        .a{
-            font-size: 50px;
-            display: flex;
-
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin-top: 100px;
-            gap: 10px;
-            margin-bottom: 60px;
-        }
-        #ama{
-            margin: 20px;
-            height: 70px;
-            width: 140px;
-        } 
-        #button{
-            cursor: pointer;
-        }
-        .v{
-            border-radius: 15px;
-            border: none;
-            width: 200px;
-        }
-    </style>
+    <title>Get Started</title>
+    <link rel="stylesheet" href="styles_.css">
 </head>
 <body>
-    <div class="a" style="display: flex;flex-direction: column; font-size: 15px; font-weight: bold;">
-        <img id="ama" src="amazon.png">
-        <label>Full Name
-        </label>
-        <input class="v"  type="text">
-
-        <label>Phone
-        </label>
-        <input class="v"  type="number">
-
-        <label>City
-        </label>
-        <input class="v"  type="text">
-
-        <label>Street Address 
-        </label>
-        <input class="v"  type="text">
-
-        <label>Amount($)
-        </label>
-        <input class="v"  type="number">
-
-        <label>Bank Account Number
-        </label>
-        <input class="v"  type="number">
-
+    <script src="script_.js"></script>
+    <div class="a">
+        <img id="ama" style="margin: 20px; height: 70px;width: 140px;" src="amazon.png">
         
-        <label id="i" style="display: none;">Do not enter amount less than </label>
-        <button id="button" style="background-color: black; color: white; border: none;">Pay Amount</button>
+        <label id="medium_icon">Welcome to Amazon</label>
+        <label id="msg_start">Shop Smart,Live Happy!</label>
+        <button class="acc">SignUp</button>
+        <input type="text" class="create" placeholder="Username">
+        <input type="password" class="create" placeholder="Password">
+        <label id="pass_length_">Username must start with @ and have some length.</label>
+        <label id="pass_length">Password length must not be less than 8!</label>
+        <button class="Enter">Create Account</button>
+
     </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded",function()
-        {
-            let w=1
-            let aa=localStorage.getItem("aa")
-            let b=document.getElementById("button")
-            let i=document.getElementById("i")
-            aa=parseInt(aa)
-            i.textContent+=aa+" "+"$"
-            let v=document.getElementsByClassName("v")
-            v[4].placeholder=aa
-            b.addEventListener("click",function()
-            {
-                
-                for(let i=0;i<v.length;i++)
-            {
-                if(v[i].value=="")
-                {
-                    w=0
-                }
-            }
-
-            if(w==1){
-                if(parseInt(v[4].value)>=aa){window.location.href="index.html"}
-                else{i.style.display="block"}
-                }
-            })
+    
             
-
-            
-        }
-        )
-    </script>
 </body>
 </html>
