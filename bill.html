@@ -6,7 +6,8 @@
     <title>Payment</title>
     <style>
         body{
-            background-color: aquamarine;
+            background-color: palegreen;
+            margin: 0%;
         }
         .a{
             font-size: 50px;
@@ -17,6 +18,7 @@
             justify-content: center;
             margin-top: 100px;
             gap: 10px;
+            margin-bottom: 60px;
         }
         #ama{
             margin: 20px;
@@ -34,37 +36,63 @@
     </style>
 </head>
 <body>
-    <div class="a">
+    <div class="a" style="display: flex;flex-direction: column; font-size: 15px; font-weight: bold;">
         <img id="ama" src="amazon.png">
+        <label>Full Name
+        </label>
+        <input class="v"  type="text">
 
-        <input class="v" placeholder="Full Name" type="text">
-        <input class="v" placeholder="Phone Number" type="number">
-        <input class="v" placeholder="City" type="text">
-        <input class="v" placeholder="Street Address" type="text">
-        <input class="v" placeholder="Amount($)" type="number">
-        <input class="v" placeholder="Bank Account Number" type="number">
+        <label>Phone
+        </label>
+        <input class="v"  type="number">
+
+        <label>City
+        </label>
+        <input class="v"  type="text">
+
+        <label>Street Address 
+        </label>
+        <input class="v"  type="text">
+
+        <label>Amount($)
+        </label>
+        <input class="v"  type="number">
+
+        <label>Bank Account Number
+        </label>
+        <input class="v"  type="number">
+
+        
+        <label id="i" style="display: none;">Do not enter amount less than </label>
         <button id="button" style="background-color: black; color: white; border: none;">Pay Amount</button>
     </div>
 
     <script>
-        document.addEventListener("click",function()
+        document.addEventListener("DOMContentLoaded",function()
         {
             let w=1
-            let aa=document.getElementById("button")
-            
-            aa.addEventListener("click",function()
+            let aa=localStorage.getItem("aa")
+            let b=document.getElementById("button")
+            let i=document.getElementById("i")
+            aa=parseInt(aa)
+            i.textContent+=aa+" "+"$"
+            let v=document.getElementsByClassName("v")
+            v[4].placeholder=aa
+            b.addEventListener("click",function()
             {
-                let v=document.getElementsByClassName("v")
+                
                 for(let i=0;i<v.length;i++)
             {
-                if(v[i]=="")
+                if(v[i].value=="")
                 {
                     w=0
                 }
             }
 
             if(w==1){
-                window.location.href="index.html"}
+                if(parseInt(v[4].value)>=aa){window.location.href="index.html"}
+                else{i.style.display="block"}
+                }
             })
             
 
